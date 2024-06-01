@@ -30,8 +30,8 @@ const Hero = () => {
                  </span>
             </div>
         </Link>
-      </div>
     </div>
+  </div>
   );
 };
 
