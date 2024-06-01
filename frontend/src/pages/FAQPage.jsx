@@ -72,8 +72,8 @@ const Faq = () => {
             <div className="mt-4">
               <p className="text-base text-gray-500">
                 If you're not satisfied with your purchase, we accept returns
-                within 30 days of delivery. To initiate a return, please email
-                us at support@myecommercestore.com with your order number and a
+                within 3 days of delivery. To initiate a return, please email
+                us at bookogreatbooks@gmail.com with your order number and a
                 brief explanation of why you're returning the item.
               </p>
             </div>
@@ -171,8 +171,7 @@ const Faq = () => {
             <div className="mt-4">
               <p className="text-base text-gray-500">
                 You can contact our customer support team by emailing us at
-                support@myecommercestore.com, or by calling us at (555) 123-4567
-                between the hours of 9am and 5pm EST, Monday through Friday.
+                bookogreatbooks@gmail.com.
               </p>
             </div>
           )}
@@ -269,7 +268,7 @@ const Faq = () => {
           {activeTab === 6 && (
             <div className="mt-4">
               <p className="text-base text-gray-500">
-                Currently, we only offer shipping within the United States.
+                Currently, we only offer shipping within the India.
               </p>
             </div>
           )}
