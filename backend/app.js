@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 
 app.use(cors({
-  origin: 'https://booko.vercel.app/',
+  origin: 'https://booko.vercel.app',
   credentials: true
 }));
 
