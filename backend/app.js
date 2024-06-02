@@ -5,8 +5,13 @@ const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 
+const allowedOrigins = [
+  'https://booko-kutbkvqjb-dracogaming0209-gmailcoms-projects.vercel.app',
+  'https://booko-kg7h4y85q-dracogaming0209-gmailcoms-projects.vercel.app'
+];
+
 app.use(cors({
-  origin: 'https://booko-kutbkvqjb-dracogaming0209-gmailcoms-projects.vercel.app',
+  origin: 'https://booko-kg7h4y85q-dracogaming0209-gmailcoms-projects.vercel.app',
   credentials: true
 }));
 
