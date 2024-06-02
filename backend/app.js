@@ -5,13 +5,25 @@ const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 
-const allowedOrigins = [
-  'https://booko-kutbkvqjb-dracogaming0209-gmailcoms-projects.vercel.app',
-  'https://booko-kg7h4y85q-dracogaming0209-gmailcoms-projects.vercel.app'
-];
+app.use((req, res, next) => {
+  const allowedOrigins = [
+    'https://booko-kutbkvqjb-dracogaming0209-gmailcoms-projects.vercel.app',
+    'https://booko-kg7h4y85q-dracogaming0209-gmailcoms-projects.vercel.app',
+    'https://booko-kyguz93q5-dracogaming0209-gmailcoms-projects.vercel.app'
+  ];
+  const origin = req.headers.origin;
+  if (allowedOrigins.includes(origin)) {
+    res.setHeader('Access-Control-Allow-Origin', origin);
+  }
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+  res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+  res.setHeader('Access-Control-Allow-Credentials', true);
+  next();
+});
+
 
 app.use(cors({
-  origin: 'https://booko-kg7h4y85q-dracogaming0209-gmailcoms-projects.vercel.app',
+  origin: 'https://booko.vercel.app',
   credentials: true
 }));
 
