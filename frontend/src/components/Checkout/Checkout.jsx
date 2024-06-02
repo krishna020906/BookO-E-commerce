@@ -8,6 +8,7 @@ import axios from "axios";
 import { server } from "../../server";
 import { toast } from "react-toastify";
 
+
 const Checkout = () => {
   const { user } = useSelector((state) => state.user);
   const { cart } = useSelector((state) => state.cart);
@@ -60,8 +61,9 @@ const Checkout = () => {
   );
 
   // this is shipping cost variable
-  const shipping = 70;
-
+  
+  const shipping = 80 
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     const name = couponCode;

@@ -11,6 +11,9 @@ app.use(cors({
 }));
 
 app.use(express.json());
+app.use("/",(req,res) =>{
+  res.send("Hello world")
+})
 app.use(cookieParser());
 app.use("/test", (req, res) => {
   res.send("Hello world!");

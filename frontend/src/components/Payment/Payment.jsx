@@ -28,7 +28,8 @@ const Payment = () => {
     const orderData = JSON.parse(localStorage.getItem("latestOrder"));
     setOrderData(orderData);
   }, []);
-
+  
+  
   const createOrder = (data, actions) => {
     return actions.order
       .create({
@@ -209,8 +210,9 @@ const PaymentInfo = ({
   const [select, setSelect] = useState(1);
 
   return (
+    
     <div className="w-full 800px:w-[95%] bg-[#fff] rounded-md p-5 pb-8">
-      {/* select buttons */}
+      
       <div>
         <div className="flex w-full pb-5 border-b mb-2">
           <div
@@ -226,7 +228,7 @@ const PaymentInfo = ({
           </h4>
         </div>
 
-        {/* pay with card */}
+        
         {select === 1 ? (
           <div className="w-full flex border-b">
             <form className="w-full" onSubmit={paymentHandler}>
@@ -290,7 +292,8 @@ const PaymentInfo = ({
                 <div className="w-[50%]">
                   <label className="block pb-2">CVV</label>
                   <CardCvcElement
-                    className={`${styles.input} !h-[35px]`}
+                  className={`${styles.input} !h-[35px]`}
+
                     options={{
                       style: {
                         base: {
@@ -321,7 +324,7 @@ const PaymentInfo = ({
       </div>
 
       <br />
-      {/* paypal payment */}
+      
       <div>
         <div className="flex w-full pb-5 border-b mb-2">
           <div
@@ -337,7 +340,7 @@ const PaymentInfo = ({
           </h4>
         </div>
 
-        {/* pay with payement */}
+        
         {select === 2 ? (
           <div className="w-full flex border-b">
             <div
@@ -359,7 +362,7 @@ const PaymentInfo = ({
                     <PayPalScriptProvider
                       options={{
                         "client-id":
-                          "Aczac4Ry9_QA1t4c7TKH9UusH3RTe6onyICPoCToHG10kjlNdI-qwobbW9JAHzaRQwFMn2-k660853jn",
+                          "AfBFYP2uk8j2hr1oGudf5HZYrOoh5F_VMtfAXIjQYp_RasBKri6aq_tAeBiLjxTw_1NI8xbzuEcJ-zwg",
                       }}
                     >
                       <PayPalButtons
@@ -376,7 +379,7 @@ const PaymentInfo = ({
       </div>
 
       <br />
-      {/* cash on delivery */}
+      
       <div>
         <div className="flex w-full pb-5 border-b mb-2">
           <div
@@ -392,7 +395,7 @@ const PaymentInfo = ({
           </h4>
         </div>
 
-        {/* cash on delivery */}
+        
         {select === 3 ? (
           <div className="w-full flex">
             <form className="w-full" onSubmit={cashOnDeliveryHandler}>
