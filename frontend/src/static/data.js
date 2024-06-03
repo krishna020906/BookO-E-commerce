@@ -27,7 +27,7 @@ export const navItems = [
     {
       id: 1,
       title: "Free Shipping",
-      Description: "From all orders over 100$",
+      Description: "From all orders over ₹1000",
       icon: (
         <svg
           width="36"
@@ -77,7 +77,7 @@ export const navItems = [
     {
       id: 2,
       title: "Daily Surprise Offers",
-      Description: "Save up to 25% off",
+      Description: "Save up to 80% off",
       icon: (
         <svg
           width="32"

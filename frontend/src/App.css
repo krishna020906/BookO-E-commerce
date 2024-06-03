@@ -8,6 +8,7 @@
 
 *{
   scroll-behavior: smooth;
+  font-family: Outfit;
 }
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
