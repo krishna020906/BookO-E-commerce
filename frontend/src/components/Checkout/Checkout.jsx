@@ -62,7 +62,7 @@ const Checkout = () => {
 
   // this is shipping cost variable
   
-  const shipping = 80 
+  const shipping = 40 
   
   const handleSubmit = async (e) => {
     e.preventDefault();

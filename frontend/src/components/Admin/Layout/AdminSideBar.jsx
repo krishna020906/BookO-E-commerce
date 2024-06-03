@@ -17,7 +17,7 @@ const AdminSideBar = ({ active }) => {
         <Link to="/admin/dashboard" className="w-full flex items-center">
           <RxDashboard
             size={30}
-            color={`${active === 1 ? "crimson" : "#555"}`}
+            color={`${active === 1 ? "crimson" : "#8B3CFF"}`}
           />
           <h5
             className={`hidden 800px:block pl-2 text-[18px] font-[400] ${
@@ -33,7 +33,7 @@ const AdminSideBar = ({ active }) => {
         <Link to="/admin-orders" className="w-full flex items-center">
           <FiShoppingBag
             size={30}
-            color={`${active === 2 ? "crimson" : "#555"}`}
+            color={`${active === 2 ? "crimson" : "#8B3CFF"}`}
           />
           <h5
             className={`hidden 800px:block pl-2 text-[18px] font-[400] ${
@@ -49,7 +49,7 @@ const AdminSideBar = ({ active }) => {
         <Link to="/admin-sellers" className="w-full flex items-center">
           <GrWorkshop
             size={30}
-            color={`${active === 3 ? "crimson" : "#555"}`}
+            color={`${active === 3 ? "crimson" : "#8B3CFF"}`}
           />
           <h5
             className={`hidden 800px:block pl-2 text-[18px] font-[400] ${
@@ -65,7 +65,7 @@ const AdminSideBar = ({ active }) => {
         <Link to="/admin-users" className="w-full flex items-center">
           <HiOutlineUserGroup
             size={30}
-            color={`${active === 4 ? "crimson" : "#555"}`}
+            color={`${active === 4 ? "crimson" : "#8B3CFF"}`}
           />
           <h5
             className={`hidden 800px:block pl-2 text-[18px] font-[400] ${
@@ -81,7 +81,7 @@ const AdminSideBar = ({ active }) => {
         <Link to="/admin-products" className="w-full flex items-center">
           <BsHandbag
             size={30}
-            color={`${active === 5 ? "crimson" : "#555"}`}
+            color={`${active === 5 ? "crimson" : "#8B3CFF"}`}
           />
           <h5
             className={`hidden 800px:block pl-2 text-[18px] font-[400] ${
@@ -97,7 +97,7 @@ const AdminSideBar = ({ active }) => {
         <Link to="/admin-events" className="w-full flex items-center">
           <MdOutlineLocalOffer
             size={30}
-            color={`${active === 6 ? "crimson" : "#555"}`}
+            color={`${active === 6 ? "crimson" : "#8B3CFF"}`}
           />
           <h5
             className={`hidden 800px:block pl-2 text-[18px] font-[400] ${
@@ -118,7 +118,7 @@ const AdminSideBar = ({ active }) => {
         >
           <CiMoneyBill
             size={30}
-            color={`${active === 7 ? "crimson" : "#555"}`}
+            color={`${active === 7 ? "crimson" : "#8B3CFF"}`}
           />
           <h5
             className={`hidden 800px:block pl-2 text-[18px] font-[400] ${
@@ -137,7 +137,7 @@ const AdminSideBar = ({ active }) => {
         >
           <AiOutlineSetting
             size={30}
-            color={`${active === 8 ? "crimson" : "#555"}`}
+            color={`${active === 8 ? "crimson" : "#8B3CFF"}`}
           />
           <h5
             className={`hidden 800px:block pl-2 text-[18px] font-[400] ${

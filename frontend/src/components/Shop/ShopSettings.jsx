@@ -81,7 +81,7 @@ const ShopSettings = () => {
               alt=""
               className="w-[200px] h-[200px] rounded-full cursor-pointer"
             />
-            <div className="w-[30px] h-[30px] bg-[#E3E9EE] rounded-full flex items-center justify-center cursor-pointer absolute bottom-[10px] right-[15px]">
+            <div className="w-[30px] h-[30px] bg-[#8B3CFF] rounded-full flex items-center justify-center cursor-pointer absolute bottom-[10px] right-[15px]">
               <input
                 type="file"
                 id="image"
