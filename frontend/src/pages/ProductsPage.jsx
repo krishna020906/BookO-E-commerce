@@ -36,7 +36,7 @@ const ProductsPage = () => {
       <br />
       <br />
       <div className={`${styles.section}`}>
-        <div className="grid grid-cols-1 gap-[20px] md:grid-cols-4 md:gap-[25px] lg:grid-cols-5 lg:gap-[25px] xl:grid-cols-5 xl:gap-[30px] mb-12">
+        <div className="grid grid-cols-4 gap-[20px] md:grid-cols-4 md:gap-[25px] lg:grid-cols-5 lg:gap-[25px] xl:grid-cols-5 xl:gap-[30px] mb-12">
           {data && data.map((i, index) => <ProductCard data={i} key={index} />)}
         </div>
         {data && data.length === 0 ? (
